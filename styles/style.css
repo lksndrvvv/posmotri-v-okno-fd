@@ -54,17 +54,17 @@ ol {
   background-color: #d9d9d9;
 }
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
-  position: relative;
 }
 
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .search-form {
@@ -144,7 +144,7 @@ input.search-form__textfield:focus {
   background-color: #fff;
 }
 
-.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
@@ -155,7 +155,6 @@ input.search-form__textfield:focus {
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   outline-color: #fff;
 }
-
 
 .content {
   display: flex;
@@ -186,13 +185,13 @@ input.search-form__textfield:focus {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow: auto;
-  position: relative;
   padding-right: 2px;
+  overflow: auto;
 }
 
 .content__list {
@@ -205,8 +204,6 @@ input.search-form__textfield:focus {
   padding-right: 3px;
   padding-left: 3px;
 }
-
-
 
 .content__card-link {
   display: block;
@@ -289,8 +286,6 @@ input.search-form__textfield:focus {
   object-position: center;
 }
 
-
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -300,8 +295,6 @@ input.search-form__textfield:focus {
   clip-path: inset(50%);
   white-space: nowrap;
 }
-
-
 
 .button {
   border: 1px solid #fff;
